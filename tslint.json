@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "tslint:recommended"   
+  ],
+  "rules": {
+    "semicolon": [true, "never"],
+    "interface-name":[false],
+    "max-classes-per-file": [false, 1]
+  }
+}
