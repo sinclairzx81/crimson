@@ -18,8 +18,8 @@ export class Decrement implements Actor<number> {
 }
 
 const system = new System<number>("system")
-system.mount("Increment", new Increment)
-system.mount("Decrement", new Decrement)
+system.mount("Increment", new Increment())
+system.mount("Decrement", new Decrement())
 
 const [sender, receiver] = system.start()
 sender.send("Decrement", 10)
