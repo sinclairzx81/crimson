@@ -1,4 +1,4 @@
-# crimson
+s# crimson
 
 Actor systems in JavaScript.
 
@@ -21,7 +21,7 @@ const system = new System<number>("system")
 system.mount("Increment", new Increment)
 system.mount("Decrement", new Decrement)
 
-const [sender, receiver] = system.run()
+const [sender, receiver] = system.start()
 sender.send("Decrement", 10)
 sender.send("Increment", 10)
 receiver.on((from, value) => {
