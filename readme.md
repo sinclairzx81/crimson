@@ -1,4 +1,4 @@
-s# crimson
+# crimson
 
 Actor systems in JavaScript.
 
